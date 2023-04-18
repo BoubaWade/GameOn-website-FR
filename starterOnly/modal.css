@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
 }
-/* Landing Page */
 
 body {
   margin: 0;
@@ -90,8 +89,6 @@ img {
   }
 }
 
-
-
  @media screen and (max-width: 540px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -111,8 +108,6 @@ main {
   margin: 1px 20px 15px;
   border-radius: 2rem;
   text-align: justify;
-
-
 }
 
 .modal-btn {
@@ -226,12 +221,11 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
-/* 
 input[data-error]::after {
     content: attr(data-error);
     font-size: 0.4em;
     color: red;
-} */
+}
 .checkbox-label,
 .checkbox2-label {
   position: relative;
@@ -325,7 +319,7 @@ input[data-error]::after {
 .btn-signup {
   background: #fe142f;
   display: block;
-  margin: 0 auto;
+  margin: 30px auto;
   border-radius: 7px;
   font-size: 1rem;
   padding: 12px 82px;
@@ -347,7 +341,6 @@ input[data-error]::after {
 .select-selected {
   background-color: #fff;
 }
-
 /* Style the arrow inside the select element: */
 .select-selected:after {
   position: absolute;
@@ -516,7 +509,12 @@ footer {
     text-align: center;
   }
 }
-
+.text-form-invalid{
+  display: block;
+  text-align: center;
+  font-size: .9rem;
+  color:red
+}
 @keyframes modalopen {
   from {
     opacity: 0;
@@ -527,3 +525,14 @@ footer {
   }
 }
 
+.anim-fail{
+  animation: animFail .2s;
+}
+@keyframes animFail {
+  30%{
+    transform: translateX(10px);
+  }
+  60%{
+    transform: translateX(-10px);
+  }
+}
