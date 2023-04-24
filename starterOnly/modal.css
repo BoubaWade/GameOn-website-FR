@@ -413,7 +413,6 @@ input[data-error]::after {
   color: #fff;
   position: relative;
   text-align: left;
-  min-width: 424px;
 }
 .hero-content::after {
   content: "";
@@ -504,6 +503,29 @@ footer {
     margin: 32px auto 10px;
     padding: 12px 35px;
   }
+
+  @media screen and (max-width: 480px) {
+    .header-logo{
+      margin: 3.5% 4%;
+    }
+    .header-logo img{
+      width: 200px;
+      margin-top: 20px;
+    }
+    .main-navbar a.icon{
+      margin-top: 20px;
+    }
+    .hero-content .hero-headline{
+      font-size: 3rem;
+      width: 100%;
+      margin: 20px auto;
+    }
+    .hero-content .hero-text {
+      font-size: 1.2rem;
+      width: 100%;
+      margin-top: 30px;
+    }
+  } 
   .copyrights {
     margin-top: 50px;
     text-align: center;

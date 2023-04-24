@@ -203,7 +203,6 @@ function checkboxChecker() {
 }
 
 // Validation du formulaire
-form.addEventListener("submit", validate);
 
 function validate(e) {
   e.preventDefault();
@@ -216,7 +215,7 @@ function validate(e) {
     locationChecker() &&
     checkboxChecker()
   ) {
-    const object = {
+    const objectOutput = {
       firstNameOutput,
       lastNameOutput,
       emailOutput,
@@ -229,7 +228,7 @@ function validate(e) {
         return checkboxChecker() === true;
       },
     };
-    console.log(object);
+    console.log(objectOutput);
     const inputs = Array.from(document.querySelectorAll("input"));
     const inputsNotTheLast = inputs.slice(0, -1);
 
@@ -250,3 +249,4 @@ function validate(e) {
     textFormInvalid.textContent = "Veuillez bien remplir le formulaire";
   }
 }
+form.addEventListener("submit", validate);
